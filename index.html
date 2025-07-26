@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+    <style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f8ff;
+    }
+    #container{
+        display: grid;
+        grid-template-columns: repeat(13, 1fr);
+        grid-template-rows: repeat(5,1fr);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 12px 32px rgba(0, 0, 0, 0.25);
+        background-color: hsl(210, 80%, 95%);
+        
+        margin: auto;
+        width: 80%;
+        padding: 40px;
+        gap: 20px;
+        border-radius:20px ;
+    }
+    #container > div{
+        border-radius: 10px;
+        background-color: hsl(210, 70%, 85%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 20px;
+        padding:5px ;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.241);
+       color: rgb(40, 40, 40);
+    }
+    #container > div:hover{
+        background-color: hsl(210, 70%, 75%);
+        cursor: pointer;
+    }
+    #delete{
+        grid-column: 12 / span 2;
+        background-color: hsl(0, 70%, 75%) !important;
+    }
+    #tab{
+        grid-column: 1 / span 2;
+    }
+    #enter{
+        grid-column: 12 / span 2;
+        background-color: hsl(120, 50%, 75%) !important;
+    }
+    #caps{
+        grid-column: 1 / span 2;
+    }
+    #shift-left{
+        grid-column: 1 / span 2;
+    }
+    #shift-right{
+            grid-column: 12 / span 2;
+    }
+    #space{
+        grid-column: 5 / span 4;
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>~</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>0</div>
+        <div id="delete">delete</div>
+        <div id="tab">tab</div>
+        <div>Q</div>
+        <div>W</div>
+        <div>E</div>
+        <div>R</div>
+        <div>T</div>
+        <div>Y</div>
+        <div>U</div>
+        <div>I</div>
+        <div>O</div>
+        <div>P</div>
+        <div>\</div>
+        <div id="caps">caps</div>
+        <div>A</div>
+        <div>S</div>
+        <div>D</div>
+        <div>F</div>
+        <div>G</div>
+        <div>H</div>
+        <div>J</div>
+        <div>K</div>
+        <div>L</div>
+        <div id="enter">Enter</div>
+        <div id="shift-left">Shift</div>
+        <div>Z</div>
+        <div>X</div>
+        <div>C</div>
+        <div>V</div>
+        <div>B</div>
+        <div>N</div>
+        <div>M</div>
+        <div>  </div> 
+        <div>  </div>
+        <div id="shift-right">Shift</div>
+        <div>ctrl</div>
+        <div>fn</div>
+        <div>Win</div>
+        <div>alt</div>
+        <div id="space">Space</div>
+        <div>alt</div>
+        <div>ctrl</div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>      
+</body>
+</html>
